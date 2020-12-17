@@ -1,0 +1,106 @@
+{ "col1Title1": "Contact Us",
+  "col1Phone": "+44(0)3002774499",
+  "col1EmailText": "Email an enquiry",
+  "col1EmailAddress": "davebaulch@yahoo.co.uk",
+  "col1Title2": "Our Location",
+  "col1Address": "Registered Office:<br>Address line 1<br>Address line 2<br>Address line 3",
+  "col1Title3": "Follow Us",
+  "col2Title": "About Us",
+  "col2Items":[
+      {
+        "id": 1,
+        "title": "Nav item 1",
+        "link": "/"
+      },
+      {
+        "id": 2,
+        "title": "Nav item 2",
+        "link": "/"
+      },
+      {
+        "id": 3,
+        "title": "Nav item 3",
+        "link": "/"
+      },
+      {
+        "id": 4,
+        "title": "Nav item 4",
+        "link": "/"
+      }          
+  ],
+  "col3Title": "Our Work",
+  "col3Items":[
+      {
+        "id": 1,
+        "title": "Nav 2 item 1",
+        "link": "/"
+      },
+      {
+        "id": 2,
+        "title": "Nav 2 item 2",
+        "link": "/"
+      },
+      {
+        "id": 3,
+        "title": "Nav 2 item 3",
+        "link": "/"
+      },
+      {
+        "id": 4,
+        "title": "Nav 2 item 4",
+        "link": "/"
+      }          
+  ],
+  "col4Title": "Links",
+  "col4Items":[
+      {
+        "id": 1,
+        "title": "Nav 3 item 1",
+        "link": "/"
+      },
+      {
+        "id": 2,
+        "title": "Nav 3 item 2",
+        "link": "/"
+      },
+      {
+        "id": 3,
+        "title": "Nav 3 item 3",
+        "link": "/"
+      },
+      {
+        "id": 4,
+        "title": "Nav 3 item 4",
+        "link": "/"
+      }          
+  ],
+  "copyright": "© Copyright Notice 2020",
+  "footerItems": [
+    {
+      "id": 1,
+      "title": "Acceessibility",
+      "link": "/"
+    },
+    {
+      "id": 2,
+      "title": "Privacy Policy",
+      "link": "/"
+    },
+    {
+      "id": 3,
+      "title": "Site Map",
+      "link": "/"
+    },
+    {
+      "id": 4,
+      "title": "Cookies",
+      "link": "/"
+    }          
+  ],
+  "socialLinks": {
+    "twitterLink": "https://twitter.com",
+    "linkedinLink": "https://www.linkedin.com",
+    "facebookLink": "https://www.facebook.com",
+    "youtubeLink": "https://www.youtube.com"      
+  } 
+}

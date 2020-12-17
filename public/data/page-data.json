@@ -1,0 +1,35 @@
+{
+  "pageID": "",
+  "title": "Page title",
+  "data":[
+    {
+      "id": 1,
+      "type": "AppQuote",
+      "content": {
+        "text": "<p>\"Test: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate tenetur officiis excepturi porro ducimus ab provident.\"<p>",
+        "author": "Test: Author name",
+        "jobTitle": "Test: Author title"
+      }
+    },
+    {      
+      "id": 2,
+      "type": "AppCTA",
+      "content": {
+        "title": "CTA title",
+        "imgSrc1": "https://picsum.photos/575/300?image=1",
+        "imgSrc2": "https://picsum.photos/767/275?image=2",
+        "imgSrc3": "https://picsum.photos/991/260?image=3",
+        "imgSrc4": "https://picsum.photos/1500/400?image=4",
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>",
+        "btnText": "CTA button"
+      }
+     },
+    {      
+      "id": 3,
+      "type": "AppText",
+      "content": {
+        "text": "<h2>H2 heading</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href=\"http://www.bbc.co.uk\">Sed ultrices</a> iaculis ex, non consectetur orci ullamcorper et. Nullam eget velit feugiat, <em>sagittis sem sollicitudin</em>, <strong>laoreet magna</strong>. Sed sed nibh suscipit, sodales felis non, malesuada nisi. Nunc feugiat mi eget enim dignissim, ut vestibulum risus fringilla. Sed maximus commodo tincidunt. Nunc dignissim orci neque, sed pretium massa viverra ac. Sed a metus consectetur, rutrum arcu at, lacinia urna.</p><h3>H3 heading</h3><p>Vestibulum dignissim suscipit velit, et congue massa hendrerit eu. Suspendisse feugiat auctor imperdiet. Praesent finibus, nisl quis dictum volutpat, nulla nulla suscipit leo, vitae tincidunt erat augue pretium sapien. Ut nec turpis tempus elit tincidunt volutpat non a nisl. Nullam vitae mauris odio. Nam ac ante nec ex lacinia porta. In hac habitasse platea dictumst. Maecenas a est ligula. Duis lobortis, justo sed pulvinar molestie, velit libero efficitur lorem, a vestibulum mauris orci sed erat. Sed tristique neque lorem, et lobortis leo viverra porta. Aliquam eu sodales est, quis euismod risus. Morbi magna risus, consectetur sit amet scelerisque nec, dictum ac est.</p>"
+      } 
+    }
+  ]
+}

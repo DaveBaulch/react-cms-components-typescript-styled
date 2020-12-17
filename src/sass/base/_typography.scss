@@ -1,0 +1,171 @@
+body {
+  font-family: $font;
+  font-weight: $font-weight-normal;
+}
+
+// Generic heading styling
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+  margin-top: 2rem;
+  color: $color-headings;
+  font-weight: $font-weight-bold;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 00;
+  line-height: 1.6;
+
+  @include breakpoint(lg) {
+    font-size: 3.2rem;
+    line-height: 1.5;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 2.9rem 0 0 0;
+
+  @include breakpoint(lg) {
+    font-size: 2.8rem;
+    line-height: 1.43;
+    margin: 4.6rem 0 0 0;
+  }
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.33;
+  margin: 2.9rem 0 0 0;
+
+  @include breakpoint(lg) {
+    font-size: 2.4rem;
+    line-height: 1.33;
+    margin: 4.6rem 0 0 0;
+  }
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 2.9rem 0 0 0;
+
+
+  @include breakpoint(lg) {
+    font-size: 2.4rem;
+    line-height: 1.4;
+    margin: 4.6rem 0 0 0;
+  }
+}
+
+h5 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 2.9rem 0 0 0;
+
+  @include breakpoint(lg) {
+    font-size: 2.4rem;
+    line-height: 1.56;
+    margin: 4.6rem 0 0 0;
+  }
+}
+
+// Link styles
+
+a {
+  color: $color-link-active;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: $color-link-visited;
+}
+
+a:hover {
+  color: $color-link-hover;
+}
+
+a:focus {
+  color: $color-link-hover;
+  outline: $focus-outline;
+}
+
+// Standard text paragraphs
+
+p {
+  margin: 2rem 0 0 0;
+  padding: 0;
+}
+
+// List styles
+ol,
+ul {
+  margin: 2rem 0 0 0;
+  padding: 0;
+  list-style: none;
+
+  &:not([class]) {
+    margin: 0 1.22rem 0.8rem 1.5rem;
+    list-style-position: inside;
+  }
+}
+
+ol:not([class]) {
+  list-style-type: decimal;
+}
+
+ul:not([class]) {
+  list-style-type: disc;
+}
+
+// Definition list styles
+
+dl {
+}
+
+dt {
+  font-weight: bold;
+}
+
+// Opinionated styling of typographic elements
+
+hr {
+  height: 1px;
+  margin: 1em 0;
+  padding: 0;
+  display: block;
+  border: 0;
+  border-top: 1px solid $grey-light;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0 10px;
+}
+
+ins {
+  background: $red;
+  color: $black;
+  text-decoration: none;
+}
+
+mark {
+  font-style: italic;
+  font-weight: bold;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}

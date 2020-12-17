@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g data-name="Squares icon" transform="translate(-4 -4)" fill="#006498" fill-rule="evenodd">
+    <path d="M4,8H8V4H4V8Zm6,12h4V16H10v4ZM4,20H8V16H4v4Zm0-6H8V10H4v4Zm6,0h4V10H10v4ZM16,4V8h4V4ZM10,8h4V4H10V8Zm6,6h4V10H16v4Zm0,6h4V16H16v4Z" stroke="none"/>
+    <path d="M 5 5 L 5 7 L 7 7 L 7 5 L 5 5 M 11 5 L 11 7 L 13 7 L 13 5 L 11 5 M 17 5 L 17 7 L 19 7 L 19 5 L 17 5 M 5 11 L 5 13 L 7 13 L 7 11 L 5 11 M 11 11 L 11 13 L 13 13 L 13 11 L 11 11 M 17 11 L 17 13 L 19 13 L 19 11 L 17 11 M 5 17 L 5 19 L 7 19 L 7 17 L 5 17 M 11 17 L 11 19 L 13 19 L 13 17 L 11 17 M 17 17 L 17 19 L 19 19 L 19 17 L 17 17 M 4 4 L 8 4 L 8 8 L 4 8 L 4 4 Z M 10 4 L 14 4 L 14 8 L 10 8 L 10 4 Z M 16 4 L 20 4 L 20 8 L 16 8 L 16 4 Z M 4 10 L 8 10 L 8 14 L 4 14 L 4 10 Z M 10 10 L 14 10 L 14 14 L 10 14 L 10 10 Z M 16 10 L 20 10 L 20 14 L 16 14 L 16 10 Z M 4 16 L 8 16 L 8 20 L 4 20 L 4 16 Z M 10 16 L 14 16 L 14 20 L 10 20 L 10 16 Z M 16 16 L 20 16 L 20 20 L 16 20 L 16 16 Z" stroke="none" fill="rgba(0,0,0,0)"/>
+  </g>
+</svg>

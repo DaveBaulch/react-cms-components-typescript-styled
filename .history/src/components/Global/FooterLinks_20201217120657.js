@@ -1,0 +1,22 @@
+import React from 'react';
+
+const FooterLinks = ({ links }) => {
+  console.log(links);
+
+  renderLinks() {
+   return links.map((link, index) => {
+      return (
+        <li
+          key={index}
+        >
+          Gender: {search.gender}, <br />
+          Age range: {search.age_range}, <br />
+          Search type: {search.object_of_search}
+        </li>
+      );
+    }); 
+  } 
+  return <ul>{renderLinks()}</ul>;
+};
+
+export default FooterLinks;
