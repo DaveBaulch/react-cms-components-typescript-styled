@@ -7,7 +7,7 @@ const Sidenav = ({ onNavClick }) => {
     <div className="sidenav-container">
       <div className="sidenav-backdrop" onClick={() => onNavClick()}></div>
 
-      <div className="sidenav-wrapper" onClick={() => onNavClick()}>
+      <div className="sidenav-wrapper">
         <div className="sidenav">
           <SidenavClose onNavClick={onNavClick} />
 
@@ -16,6 +16,7 @@ const Sidenav = ({ onNavClick }) => {
             <Link to="/hero" className="nav-item">
               Hero
             </Link>
+            <li className="nav-item">Hero</li>
             <li className="nav-item">Carousel</li>
             <li className="nav-item">Sectors</li>
             <li className="nav-item">Cards</li>

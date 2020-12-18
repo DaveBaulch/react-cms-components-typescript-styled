@@ -5,7 +5,6 @@ import Header from './Global/Header';
 import Footer from './Global/Footer';
 import Main from './Global/Main';
 import Sidenav from './Global/Sidenav';
-import IndexPage from '../pages/IndexPage';
 import HeroPage from '../pages/HeroPage';
 import '../sass/base-styles.scss';
 
@@ -30,14 +29,11 @@ class App extends React.Component {
       <div ref={this.wrapperRef} className="App">
         <Router history={createBrowserHistory}>
           <Header onNavClick={this.onNavClick} />
+          <Switch>
+            <Route path="/hero" exact component={HeroPage} />
+          </Switch>
 
-          <Main>
-            <Switch>
-              <Route path="/" exact component={IndexPage} />
-              <Route path="/hero" exact component={HeroPage} />
-            </Switch>
-          </Main>
-
+          <Main></Main>
           <Sidenav
             navState={this.state.navActive}
             onNavClick={this.onNavClick}

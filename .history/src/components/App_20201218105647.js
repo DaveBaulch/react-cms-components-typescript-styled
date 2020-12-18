@@ -1,12 +1,11 @@
 import React from 'react';
 import { Router, Route, Switch } from 'react-router-dom';
-import createBrowserHistory from '../history';
+import createBrowserHistory from './history';
 import Header from './Global/Header';
 import Footer from './Global/Footer';
 import Main from './Global/Main';
 import Sidenav from './Global/Sidenav';
-import IndexPage from '../pages/IndexPage';
-import HeroPage from '../pages/HeroPage';
+import HeroPage from '../Pages/HeroPage';
 import '../sass/base-styles.scss';
 
 class App extends React.Component {
@@ -28,22 +27,16 @@ class App extends React.Component {
   render() {
     return (
       <div ref={this.wrapperRef} className="App">
-        <Router history={createBrowserHistory}>
-          <Header onNavClick={this.onNavClick} />
-
-          <Main>
+        <Header onNavClick={this.onNavClick} />
+        <Main>
+          <Router history={createBrowserHistory}>
             <Switch>
-              <Route path="/" exact component={IndexPage} />
               <Route path="/hero" exact component={HeroPage} />
             </Switch>
-          </Main>
-
-          <Sidenav
-            navState={this.state.navActive}
-            onNavClick={this.onNavClick}
-          />
-          <Footer />
-        </Router>
+          </Router>
+        </Main>
+        <Sidenav navState={this.state.navActive} onNavClick={this.onNavClick} />
+        <Footer />
       </div>
     );
   }
