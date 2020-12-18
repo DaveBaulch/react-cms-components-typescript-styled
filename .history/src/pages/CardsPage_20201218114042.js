@@ -4,7 +4,7 @@ import Cards from '../components/Components/Cards';
 const CardsPage = () => {
   return (
     <React.Fragment>
-      <h1>Cards</h1>
+      <h1>Hero</h1>
       <Cards />
     </React.Fragment>
   );

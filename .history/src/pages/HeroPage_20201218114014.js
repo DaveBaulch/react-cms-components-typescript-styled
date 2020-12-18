@@ -1,11 +1,11 @@
 import React from 'react';
-import Carousel from '../components/Components/Carousel';
+import Hero from '../components/Components/Hero';
 
 const HeroPage = () => {
   return (
     <React.Fragment>
-      <h1>Carousel</h1>
-      <Carousel />
+      <
+      <Hero />
     </React.Fragment>
   );
 };

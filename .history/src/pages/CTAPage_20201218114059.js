@@ -4,7 +4,7 @@ import CTA from '../components/Components/CTA';
 const CTAPage = () => {
   return (
     <React.Fragment>
-      <h1>CTA</h1>
+      <h1>Hero</h1>
       <CTA />
     </React.Fragment>
   );
