@@ -18,28 +18,28 @@ const Sidenav = ({ onNavClick }) => {
                 Hero
               </Link>
             </li>
-            <li className="component-list__item">
-              <Link to="/carousel" className="component-list__link">
+            <li>
+              <Link to="/carousel" className="nav-item">
                 Carousel
               </Link>
             </li>
-            <li className="component-list__item">
-              <Link to="/cards" className="component-list__linkm">
+            <li>
+              <Link to="/cards" className="nav-item">
                 Cards
               </Link>
             </li>
-            <li className="component-list__item">
-              <Link to="/cta" className="component-list__link">
+            <li>
+              <Link to="/cta" className="nav-item">
                 CTA
               </Link>
             </li>
-            <li className="component-list__item">
-              <Link to="/quote" className="component-list__link">
+            <li>
+              <Link to="/quote" className="nav-item">
                 Quote
               </Link>
             </li>
-            <li className="component-list__item">
-              <Link to="/text" className="component-list__link">
+            <li>
+              <Link to="/text" className="nav-item">
                 Text
               </Link>
             </li>

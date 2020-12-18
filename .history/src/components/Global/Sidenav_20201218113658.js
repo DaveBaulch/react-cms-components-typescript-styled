@@ -24,22 +24,22 @@ const Sidenav = ({ onNavClick }) => {
               </Link>
             </li>
             <li className="component-list__item">
-              <Link to="/cards" className="component-list__linkm">
+              <Link to="/cards" className="nav-item">
                 Cards
               </Link>
             </li>
             <li className="component-list__item">
-              <Link to="/cta" className="component-list__link">
+              <Link to="/cta" className="nav-item">
                 CTA
               </Link>
             </li>
             <li className="component-list__item">
-              <Link to="/quote" className="component-list__link">
+              <Link to="/quote" className="nav-item">
                 Quote
               </Link>
             </li>
             <li className="component-list__item">
-              <Link to="/text" className="component-list__link">
+              <Link to="/text" className="nav-item">
                 Text
               </Link>
             </li>

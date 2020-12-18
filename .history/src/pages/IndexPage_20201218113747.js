@@ -6,7 +6,7 @@ const IndexPage = () => {
     <div class="home">
       <div class="container">
         <h2>Components</h2>
-        <ul className="component-list">
+        <ul className="nav-list">
           <li className="component-list__item">
             <Link to="/hero" className="component-list__link">
               Hero

@@ -11,8 +11,8 @@ import CarouselPage from '../pages/CarouselPage';
 import SectorsPage from '../pages/SectorsPage';
 import CardsPage from '../pages/CardsPage';
 import CTAPage from '../pages/CTAPage';
-import QuotePage from '../pages/QuotePage';
 import TextPage from '../pages/TextPage';
+import AccordionPage from '../pages/AccordionPage';
 
 import '../sass/base-styles.scss';
 
@@ -45,9 +45,8 @@ class App extends React.Component {
               <Route path="/carousel" exact component={CarouselPage} />
               <Route path="/sectors" exact component={SectorsPage} />
               <Route path="/cards" exact component={CardsPage} />
-              <Route path="/cta" exact component={CTAPage} />
               <Route path="/quote" exact component={QuotePage} />
-              <Route path="/text" exact component={TextPage} />
+              <Route path="/text" exact component={HeroPage} />
             </Switch>
           </Main>
 
