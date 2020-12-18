@@ -16,6 +16,19 @@ const Cards = () => {
     getData();
   }, []);
 
+  // let renderedCardList = null;
+  // const cards = data.cards;
+
+  // if (cards) {
+  //   renderedCardList = cards.map((card) => {
+  //     return (
+  //       <li className="card-list__item" key="card.id">
+  //         <Card className="item" card={card} />
+  //       </li>
+  //     );
+  //   });
+  // }
+
   return (
     <article className="section card-list-block">
       <div className="container">

@@ -16,6 +16,19 @@ const Cards = () => {
     getData();
   }, []);
 
+  let renderedCardList = null;
+  const cards = data.cards;
+
+  if (cards) {
+    renderedCardList = cards.map((card) => {
+      return (
+        <li className="card-list__item" key="card.id">
+          <Card className="item" card={card} />
+        </li>
+      );
+    });
+  }
+
   return (
     <article className="section card-list-block">
       <div className="container">
@@ -24,14 +37,8 @@ const Cards = () => {
             <h2>{data.title}</h2>
           </div>
           <ol className="card-list__list">
-            {data.cards &&
-              data.cards.map((card) => {
-                return (
-                  <li className="card-list__item" key="card.id">
-                    <Card className="item" card={card} />
-                  </li>
-                );
-              })}
+            {cards && }
+          
           </ol>
         </div>
       </div>
