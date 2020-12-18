@@ -1,0 +1,15 @@
+@import 'utilities/variables';
+
+.social-sharing-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  &:hover,
+  &:focus {
+    color: $color-link-hover;
+    text-decoration: underline;
+  }
+}
