@@ -1,0 +1,61 @@
+{
+  "title": "Sectors title",
+  "sectors":[
+    {
+      "id": 1,
+      "link": "/",
+      "imgSrc": "https://picsum.photos/575/300?image=1",
+      "title": "Sector title 1",
+      "text": "excepturi porro ducimus ab provident, quas temporibus ratione illo quae neque cupiditate totam facere nulla ad exercitationem itaque incidunt.</p>"
+    },
+    {
+      "id": 2,
+      "link": "/",
+      "imgSrc": "https://picsum.photos/575/300?image=2",
+      "title": "Sector title 2",
+      "text": "excepturi porro ducimus ab provident, quas temporibus ratione illo quae neque cupiditate totam facere nulla ad exercitationem itaque incidunt.</p>"
+    },
+    {
+      "id": 3,
+      "link": "/",
+      "imgSrc": "https://picsum.photos/575/300?image=3",
+      "title": "Sector title 3",
+      "text": "excepturi porro ducimus ab provident, quas temporibus ratione illo quae neque cupiditate totam facere nulla ad exercitationem itaque incidunt.</p>"
+    },
+    {
+      "id": 4,
+      "link": "/",
+      "imgSrc": "https://picsum.photos/575/300?image=4",
+      "title": "Sector title 4",
+      "text": "excepturi porro ducimus ab provident, quas temporibus ratione illo quae neque cupiditate totam facere nulla ad exercitationem itaque incidunt.</p>"
+    },
+    {
+      "id": 5,
+      "link": "/",
+      "imgSrc": "https://picsum.photos/575/300?image=5",
+      "title": "Sector title 5",
+      "text": "excepturi porro ducimus ab provident, quas temporibus ratione illo quae neque cupiditate totam facere nulla ad exercitationem itaque incidunt.</p>"
+    },
+    {
+      "id": 6,
+      "link": "/",
+      "imgSrc": "https://picsum.photos/575/300?image=6",
+      "title": "Sector title 6",
+      "text": "excepturi porro ducimus ab provident, quas temporibus ratione illo quae neque cupiditate totam facere nulla ad exercitationem itaque incidunt.</p>"
+    },
+    {
+      "id": 7,
+      "link": "/",
+      "imgSrc": "https://picsum.photos/575/300?image=7",
+      "title": "Sector title 7",
+      "text": "excepturi porro ducimus ab provident, quas temporibus ratione illo quae neque cupiditate totam facere nulla ad exercitationem itaque incidunt.</p>"
+    },
+    {
+      "id": 8,
+      "link": "/",
+      "imgSrc": "https://picsum.photos/575/300?image=8",
+      "title": "Sector title 8",
+      "text": "excepturi porro ducimus ab provident, quas temporibus ratione illo quae neque cupiditate totam facere nulla ad exercitationem itaque incidunt.</p>"
+    }
+  ]
+}
