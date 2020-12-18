@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../../sass/components/_text.scss';
 
 const Text = () => {
   const [data, setData] = useState([]);
@@ -16,19 +15,9 @@ const Text = () => {
   }, []);
 
   return (
-    <div class="section text-block">
-      <div class="container">
-        <div class="row">
-          <div
-            className="wysiwyg"
-            dangerouslySetInnerHTML={{
-              __html: data.text
-            }}
-          ></div>
-        </div>
-      </div>
-    </div>
-  );
+    <React.Fragment> Text</ >
+  )
+    
 };
 
 export default Text;

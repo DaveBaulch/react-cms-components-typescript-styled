@@ -28,10 +28,9 @@ const Quote = () => {
             ></span>
             <cite>
               <span className="quote__author">{data.author}</span>
-              {data.author && data.jobTitle && <span>, </span>}
-              {data.jobTitle && (
-                <span className="quote__job-title">{data.jobTitle}</span>
-              )}
+              {!(data.author && ) && <span>, </span>}
+
+              <span className="quote__job-title">{data.jobTitle}</span>
             </cite>
           </blockquote>
         </div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../../sass/components/_text.scss';
 
 const Text = () => {
   const [data, setData] = useState([]);
@@ -20,7 +19,7 @@ const Text = () => {
       <div class="container">
         <div class="row">
           <div
-            className="wysiwyg"
+            class="wysiwyg"
             dangerouslySetInnerHTML={{
               __html: data.text
             }}

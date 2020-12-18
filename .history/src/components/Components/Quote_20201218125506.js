@@ -26,16 +26,16 @@ const Quote = () => {
                 __html: data.text
               }}
             ></span>
-            <cite>
+            <cit>
               <span className="quote__author">{data.author}</span>
-              {data.author && data.jobTitle && <span>, </span>}
-              {data.jobTitle && (
-                <span className="quote__job-title">{data.jobTitle}</span>
-              )}
-            </cite>
+              if (data.author && data.jobTitle &&) {<span>, </span>}
+              if (data.jobTitle &&){
+                < span className="quote__job-title">{data.jobTitle}
+              }
+            </cit
           </blockquote>
         </div>
-      </div>
+      </div
     </div>
   );
 };

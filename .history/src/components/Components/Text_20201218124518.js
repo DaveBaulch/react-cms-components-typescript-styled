@@ -20,7 +20,7 @@ const Text = () => {
       <div class="container">
         <div class="row">
           <div
-            className="wysiwyg"
+            class="wysiwyg"
             dangerouslySetInnerHTML={{
               __html: data.text
             }}

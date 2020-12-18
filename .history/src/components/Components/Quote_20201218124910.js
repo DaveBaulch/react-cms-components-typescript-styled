@@ -20,18 +20,11 @@ const Quote = () => {
       <div className="container">
         <div className="row">
           <blockquote className="quote">
-            <span
-              class="quote__text"
-              dangerouslySetInnerHTML={{
-                __html: data.text
-              }}
-            ></span>
+            <span className="quote__text"></span>
             <cite>
               <span className="quote__author">{data.author}</span>
-              {data.author && data.jobTitle && <span>, </span>}
-              {data.jobTitle && (
-                <span className="quote__job-title">{data.jobTitle}</span>
-              )}
+              <span>, </span>
+              <span className="quote__job-title">{data.jobTitle}</span>
             </cite>
           </blockquote>
         </div>

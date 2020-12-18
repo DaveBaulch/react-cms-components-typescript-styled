@@ -17,26 +17,19 @@ const Quote = () => {
 
   return (
     <div className="section quote-block">
-      <div className="container">
-        <div className="row">
-          <blockquote className="quote">
-            <span
-              class="quote__text"
-              dangerouslySetInnerHTML={{
-                __html: data.text
-              }}
-            ></span>
+      <div class="container">
+        <div class="row">
+          <blockquote class="quote">
+            <span class="quote__text"></span>
             <cite>
-              <span className="quote__author">{data.author}</span>
-              {data.author && data.jobTitle && <span>, </span>}
-              {data.jobTitle && (
-                <span className="quote__job-title">{data.jobTitle}</span>
-              )}
+              <span class="quote__author">{data.author }</span>
+              <span v-if="hasComma">, </span>
+              <span class="quote__job-title">{ data.jobTitle }</span>
             </cite>
           </blockquote>
         </div>
       </div>
-    </div>
+    </div>    
   );
 };
 
