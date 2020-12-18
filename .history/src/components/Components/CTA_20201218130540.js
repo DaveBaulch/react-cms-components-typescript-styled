@@ -2,7 +2,6 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import lazyloadPicturefillBackground from 'lazyload-picturefill-background';
-import BaseButtonLink from '../UI/BaseButtonLink';
 import '../../sass/components/_cta.scss';
 
 const CTA = () => {
@@ -11,7 +10,6 @@ const CTA = () => {
   const getData = async () => {
     const { data } = await axios.get('data/cta-data.json');
     setData(data);
-    new lazyloadPicturefillBackground();
   };
 
   useEffect(() => {
@@ -24,11 +22,11 @@ const CTA = () => {
         <div className="cta__background picturefill-background is-lazy">
           <span
             className="picturefill-background-source"
-            src="ata.imgSrc1"
+            src="blockData.imgSrc1"
           ></span>
           <span
             class="picturefill-background-source"
-            src="ata.imgSrc2"
+            src="blockData.imgSrc2"
             data-media="(min-width: 576px)"
           ></span>
           <span
@@ -46,15 +44,10 @@ const CTA = () => {
         <div className="container">
           <div className="cta__content">
             <h1 className="cta__title">{data.title}</h1>
-            <div
-              class="cta__text"
-              dangerouslySetInnerHTML={{
-                __html: data.text
-              }}
-            ></div>
-            <BaseButtonLink href={data.href} btnClass="cta__btn">
+            <div v-html="ata.text" class="cta__text"></div>
+            <a href="/about" className="cta__btn">
               {data.btnText}
-            </BaseButtonLink>
+            </a>
           </div>
         </div>
       </div>

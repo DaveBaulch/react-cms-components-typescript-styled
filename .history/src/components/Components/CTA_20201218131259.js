@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import lazyloadPicturefillBackground from 'lazyload-picturefill-background';
-import BaseButtonLink from '../UI/BaseButtonLink';
+import BaseButton from ''
 import '../../sass/components/_cta.scss';
 
 const CTA = () => {
@@ -52,9 +52,9 @@ const CTA = () => {
                 __html: data.text
               }}
             ></div>
-            <BaseButtonLink href={data.href} btnClass="cta__btn">
+            <a href="/about" className="cta__btn">
               {data.btnText}
-            </BaseButtonLink>
+            </a>
           </div>
         </div>
       </div>

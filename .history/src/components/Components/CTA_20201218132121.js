@@ -52,7 +52,7 @@ const CTA = () => {
                 __html: data.text
               }}
             ></div>
-            <BaseButtonLink href={data.href} btnClass="cta__btn">
+            <BaseButtonLink href={data.href} btnClass={data.btnText}>
               {data.btnText}
             </BaseButtonLink>
           </div>
