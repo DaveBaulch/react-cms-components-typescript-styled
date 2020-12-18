@@ -57,11 +57,7 @@ const Carousel = () => {
           })}
       </Slider>
 
-      <button
-        className={paused ? 'carousel-play-btn is-paused' : 'carousel-play-btn'}
-        aria-label="Play carousel"
-        onClick={onPauseClick}
-      >
+      <button className={ } aria-label="Play carousel" onClick={onPauseClick}>
         {paused ? 'Play' : 'Pause'}
       </button>
     </section>

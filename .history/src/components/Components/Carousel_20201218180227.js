@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Slider from 'react-slick';
 // import 'slick-carousel/slick/slick.css';
@@ -11,7 +11,7 @@ import lazyloadPicturefillBackground from 'lazyload-picturefill-background';
 const Carousel = () => {
   const [data, setData] = useState([]);
   const [paused, setPause] = useState(false);
-  const carouselRef = useRef();
+  const pauseRef = useRef();
 
   const getData = async () => {
     const { data } = await axios.get('data/carousel-data.json');
@@ -27,9 +27,7 @@ const Carousel = () => {
     setPause(!paused);
 
     if (paused) {
-      carouselRef.current.slickPlay();
     } else {
-      carouselRef.current.slickPause();
     }
   };
 
@@ -50,18 +48,14 @@ const Carousel = () => {
 
   return (
     <section className="section carousel-block">
-      <Slider ref={carouselRef} className="carousel" {...settings}>
+      <Slider className="carousel" {...settings}>
         {data.items &&
           data.items.map((item) => {
             return <CarouselItem item={item} />;
           })}
       </Slider>
 
-      <button
-        className={paused ? 'carousel-play-btn is-paused' : 'carousel-play-btn'}
-        aria-label="Play carousel"
-        onClick={onPauseClick}
-      >
+      <button ref={pauseRef} aria-label="Play carousel" onClick={onPauseClick}>
         {paused ? 'Play' : 'Pause'}
       </button>
     </section>

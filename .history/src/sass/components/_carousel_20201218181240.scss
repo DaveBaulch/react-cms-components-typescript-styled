@@ -141,7 +141,10 @@
   outline: none;
   text-indent: -9999em;
   overflow: hidden;
-  background: $white url('/static/icon-pause.svg') no-repeat center center;
+  background-color: $white;
+  background-image: url('/static/icon-pause.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
   right: 15px;
   border: 2px solid $black;
 
@@ -151,5 +154,8 @@
 }
 
 .carousel-play-btn.is-paused {
-  background: $white url('/static/icon-play.svg') no-repeat center center;
+  background-color: $white !important;
+  background: url('/static/icon-play.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
 }

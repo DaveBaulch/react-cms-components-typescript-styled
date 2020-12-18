@@ -27,9 +27,9 @@ const Carousel = () => {
     setPause(!paused);
 
     if (paused) {
-      carouselRef.current.slickPlay();
+      carouselRef.current.slider.slickPlay();
     } else {
-      carouselRef.current.slickPause();
+      carouselRef.current.slider.slickPause();
     }
   };
 
@@ -57,11 +57,7 @@ const Carousel = () => {
           })}
       </Slider>
 
-      <button
-        className={paused ? 'carousel-play-btn is-paused' : 'carousel-play-btn'}
-        aria-label="Play carousel"
-        onClick={onPauseClick}
-      >
+      <button aria-label="Play carousel" onClick={onPauseClick}>
         {paused ? 'Play' : 'Pause'}
       </button>
     </section>

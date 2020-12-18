@@ -151,5 +151,8 @@
 }
 
 .carousel-play-btn.is-paused {
-  background: $white url('/static/icon-play.svg') no-repeat center center;
+  background-color: $white !important;
+  background:  $white url('/static/icon-play.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
 }

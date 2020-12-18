@@ -11,7 +11,7 @@ import lazyloadPicturefillBackground from 'lazyload-picturefill-background';
 const Carousel = () => {
   const [data, setData] = useState([]);
   const [paused, setPause] = useState(false);
-  const carouselRef = useRef();
+  const pauseRef = useRef();
 
   const getData = async () => {
     const { data } = await axios.get('data/carousel-data.json');
@@ -27,9 +27,9 @@ const Carousel = () => {
     setPause(!paused);
 
     if (paused) {
-      carouselRef.current.slickPlay();
+      pauseRef.current.carousel.play();
     } else {
-      carouselRef.current.slickPause();
+      pauseRef.current.carousel.pause();
     }
   };
 
@@ -50,18 +50,14 @@ const Carousel = () => {
 
   return (
     <section className="section carousel-block">
-      <Slider ref={carouselRef} className="carousel" {...settings}>
+      <Sliderref={carouselRef} className="carousel" {...settings}>
         {data.items &&
           data.items.map((item) => {
             return <CarouselItem item={item} />;
           })}
-      </Slider>
+      </Sliderref=>
 
-      <button
-        className={paused ? 'carousel-play-btn is-paused' : 'carousel-play-btn'}
-        aria-label="Play carousel"
-        onClick={onPauseClick}
-      >
+      <button aria-label="Play carousel" onClick={onPauseClick}>
         {paused ? 'Play' : 'Pause'}
       </button>
     </section>
