@@ -10,12 +10,12 @@ const Hero = () => {
   const getData = async () => {
     const { data } = await axios.get('data/hero-data.json');
     setData(data);
-    new lazyloadPicturefillBackground();
   };
 
   useEffect(() => {
     getData();
-  }, []);
+    new lazyloadPicturefillBackground();
+  }, [data]);
 
   return (
     <article className="section banner-block">

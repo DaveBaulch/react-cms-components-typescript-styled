@@ -10,11 +10,11 @@ const Hero = () => {
   const getData = async () => {
     const { data } = await axios.get('data/hero-data.json');
     setData(data);
-    new lazyloadPicturefillBackground();
   };
 
   useEffect(() => {
     getData();
+    new lazyloadPicturefillBackground();
   }, []);
 
   return (
