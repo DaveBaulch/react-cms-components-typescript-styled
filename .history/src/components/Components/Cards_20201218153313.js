@@ -34,7 +34,7 @@ const Cards = () => {
       <div className="container">
         <div className="card-list">
           <div className="card-list__heading">
-            <h2>{data.title}</h2>
+            <h2>{props.data.title}</h2>
           </div>
           <ol className="card-list__list">{renderedCardList}</ol>
         </div>

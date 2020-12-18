@@ -14,7 +14,7 @@ const Cards = () => {
 
   useEffect(() => {
     getData();
-  }, []);
+  }, [data]);
 
   let renderedCardList = null;
   const cards = data.cards;
