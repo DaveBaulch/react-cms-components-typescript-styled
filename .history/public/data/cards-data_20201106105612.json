@@ -1,0 +1,85 @@
+{
+  "title": "Cards list title",
+  "data":[
+    {
+      "id": 1,
+      "tag": "Tag 1",
+      "tagClass": "news",
+      "link": "/",
+      "imgSrc": "https://picsum.photos/575/300?image=1",
+      "title": "Card title 1",
+      "text": "<p>Card 1 text excepturi porro ducimus ab provident, quas temporibus ratione illo quae neque.</p>",
+      "date": "9/10/2019"
+    },
+    {
+      "id": 2,
+      "tag": "Tag 2",
+      "tagClass": "work",
+      "link": "/",
+      "imgSrc": "https://picsum.photos/575/300?image=2",
+      "title": "Card title 2",
+      "text": "<p>Card 2 text excepturi porro ducimus ab provident, quas temporibus ratione illo quae neque cupiditate totam facere nulla ad exercitationem itaque incidunt.</p>",
+      "date": "10/10/2019"
+    },
+    {
+      "id": 3,
+      "tag": null,
+      "tagClass": null,
+      "link": "/",
+      "imgSrc": "https://picsum.photos/575/300?image=3",
+      "title": "Card title 3",
+      "text": "<p>Card 3 text excepturi porro ducimus ab provident, facere nulla ad exercitationem itaque incidunt.</p>",
+      "date": "11/10/2019"
+    },
+    {
+      "id": 4,
+      "tag": "Tag 3",
+      "tagClass": "case-study",
+      "link": "/",
+      "imgSrc": "https://picsum.photos/575/300?image=4",
+      "title": "Card title 4",
+      "text": "<p>Card 4 text excepturi porro ducimus ab provident.</p>",
+      "date": "12/10/2019"
+    },
+    {
+      "id": 5,
+      "tag": null,
+      "tagClass": null,
+      "link": "/",
+      "imgSrc": "https://picsum.photos/575/300?image=5",
+      "title": "Card title 5",
+      "text": "<p>Card 5 text excepturi porro ducimus ab provident, quas totam facere nulla ad exercitationem itaque incidunt.</p>",
+      "date": "13/10/2019"
+    },
+    {
+      "id": 6,
+      "tag": null,
+      "tagClass": null,
+      "link": "/",
+      "imgSrc": "https://picsum.photos/575/300?image=6",
+      "title": "Card title 6",
+      "text": "<p>Card 6 text excepturi porro ducimus totam facere nulla ad exercitationem itaque incidunt.</p>",
+      "date": "14/10/2019"
+    },
+    {
+      "id": 7,
+      "tag": null,
+      "tagClass": null,
+      "link": "/",
+      "imgSrc": "https://picsum.photos/575/300?image=7",
+      "title": "Card title 7",
+      "text": "<p>Card 7 text excepturi porro ducimus ab provident, quas temporibus facere nulla ad exercitationem itaque incidunt.</p>",
+      "date": "15/10/2019"
+    },
+    {
+      "id": 8,
+      "tag": null,
+      "tagClass": null,
+      "link": "/",
+      "imgSrc": "https://picsum.photos/575/300?image=8",
+      "title": "Card title 8",
+      "text": "<p>Card 8 text excepturi porro ducimus ab provident.</p>",
+      "date": "16/10/2019"
+    }
+  ]
+}

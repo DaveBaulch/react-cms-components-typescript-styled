@@ -1,0 +1,52 @@
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+}
+
+.card-list__heading {
+  text-align: center;
+}
+
+.card-list__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  list-style-type: none;
+}
+
+.card-list__btn {
+  margin-bottom: 2rem;
+  margin-right: 0;
+
+  @include breakpoint(md) {
+    align-self: flex-start;
+    margin-bottom: 0;
+    position: absolute;
+    right: 1.2rem;
+    top: 5rem;
+  }
+}
+
+.card-list__item {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 0 0;
+  padding: 0;
+
+  @include breakpoint(md) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  @include breakpoint(lg) {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
