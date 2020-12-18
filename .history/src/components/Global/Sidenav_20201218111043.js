@@ -9,7 +9,6 @@ const Sidenav = ({ onNavClick }) => {
 
       <div className="sidenav-wrapper">
         <SidenavClose onNavClick={onNavClick} />
-
         <div className="sidenav" onClick={() => onNavClick()}>
           <h2>Components</h2>
           <ul className="nav-list">

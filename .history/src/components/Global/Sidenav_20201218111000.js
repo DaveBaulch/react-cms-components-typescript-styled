@@ -7,10 +7,10 @@ const Sidenav = ({ onNavClick }) => {
     <div className="sidenav-container">
       <div className="sidenav-backdrop" onClick={() => onNavClick()}></div>
 
-      <div className="sidenav-wrapper">
-        <SidenavClose onNavClick={onNavClick} />
+      <div className="sidenav-wrapper" onClick={() => onNavClick()}>
+        <div className="sidenav">
+          <SidenavClose onClick={() => onNavClick()} />
 
-        <div className="sidenav" onClick={() => onNavClick()}>
           <h2>Components</h2>
           <ul className="nav-list">
             <Link to="/hero" className="nav-item">
