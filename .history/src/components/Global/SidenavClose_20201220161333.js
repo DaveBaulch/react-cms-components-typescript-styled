@@ -26,8 +26,7 @@ const SidenavClose = () => {
       className="drawer-close"
       onClick={() => onActiveChange()}
       ref={buttonRef}
-    >
-      {/*TODO: <span class="sr-only">Close</span>*/}
+    > <span class=""
       <div className="bar"></div>
       <div className="bar"></div>
     </button>

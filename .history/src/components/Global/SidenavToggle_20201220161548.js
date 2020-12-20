@@ -29,7 +29,7 @@ const SidenavToggle = () => {
         onClick={() => onActiveChange()}
         ref={buttonRef}
       >
-        {/* TODO: <span class="sr-only">Open</span>*/}
+        {/*<span class="sr-only">Open</span>*/}
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>

@@ -1,17 +1,6 @@
 import React from 'react';
-import { useEffect, useRef, useContext } from 'react';
-import NavigationContext from '../../contexts/NavigationContext';
 
-// const SidenavClose = ({ onNavClick }) => {
-//   return (
-//     <div className="drawer-close" role="button" onClick={() => onNavClick()}>
-//       <div className="bar"></div>
-//       <div className="bar"></div>
-//     </div>
-//   );
-// };
-
-const SidenavClose = () => {
+const ScrollTopButton = () => {
   const { isActive, onActiveChange } = useContext(NavigationContext);
   const buttonRef = useRef();
 
@@ -27,7 +16,6 @@ const SidenavClose = () => {
       onClick={() => onActiveChange()}
       ref={buttonRef}
     >
-      {/*TODO: <span class="sr-only">Close</span>*/}
       <div className="bar"></div>
       <div className="bar"></div>
     </button>
@@ -35,3 +23,4 @@ const SidenavClose = () => {
 };
 
 export default SidenavClose;
+

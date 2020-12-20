@@ -27,7 +27,6 @@ const SidenavClose = () => {
       onClick={() => onActiveChange()}
       ref={buttonRef}
     >
-      {/*TODO: <span class="sr-only">Close</span>*/}
       <div className="bar"></div>
       <div className="bar"></div>
     </button>
@@ -35,3 +34,4 @@ const SidenavClose = () => {
 };
 
 export default SidenavClose;
+

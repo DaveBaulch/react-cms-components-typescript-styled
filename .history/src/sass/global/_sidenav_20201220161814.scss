@@ -5,6 +5,11 @@
   top: 0;
   left: 0;
   z-index: 100;
+  display: none;
+
+  .nav-active & {
+    disply: block;
+  }
 }
 
 .sidenav-backdrop {
@@ -16,12 +21,13 @@
   left: -100%;
   opacity: 0;
   transition: opacity 0.3s ease-out;
-
-  .nav-active & {
-    left: 0;
-    opacity: 1;
-  }
+.nav-active &{
+  left: 0;
+  opacity: 1;
 }
+}
+
+
 
 .sidenav-wrapper {
   width: 300px;
