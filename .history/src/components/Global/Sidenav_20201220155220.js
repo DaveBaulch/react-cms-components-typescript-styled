@@ -11,7 +11,7 @@ const Sidenav = ({ onNavClick }) => {
   return (
     <div className="sidenav-container">
       <FocusTrap active={isActive}>
-        <div>
+        <React.Fragment>
           <div
             className="sidenav-backdrop"
             onClick={() => onActiveChange()}
@@ -61,7 +61,7 @@ const Sidenav = ({ onNavClick }) => {
               </ul>
             </div>
           </div>
-        </div>
+        </React.Fragment>
       </FocusTrap>
     </div>
   );

@@ -22,8 +22,8 @@
   padding: 0;
 
   @include breakpoint(md) {
-    justify-content: left;
-  }
+    justify-content: space-between;
+  }  
 }
 
 .logo {
