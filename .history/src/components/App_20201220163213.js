@@ -64,8 +64,7 @@ class App extends React.Component {
             />
             <Footer />
             <ScrollTopButton>
-              <img src="images/svg/chevron-up-white.svg" alt="Back to top" />
-              <span class="sr-only">Back to top</span>
+            
             </ScrollTopButton>
           </Router>
         </div>

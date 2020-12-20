@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Main = (props) => {
+
   return (
     <main id="main" className="main">
       {props.children}

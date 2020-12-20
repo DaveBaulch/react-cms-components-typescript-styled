@@ -69,20 +69,12 @@ const Sidenav = ({ onNavClick }) => {
                   </Link>
                 </li>
                 <li className="component-list__item">
-                  <Link
-                    to="/quote"
-                    className="component-list__link"
-                    hidden={!isActive}
-                  >
+                  <Link to="/quote" className="component-list__link">
                     Quote
                   </Link>
                 </li>
                 <li className="component-list__item">
-                  <Link
-                    to="/text"
-                    className="component-list__link"
-                    hidden={!isActive}
-                  >
+                  <Link to="/text" className="component-list__link">
                     Text
                   </Link>
                 </li>
