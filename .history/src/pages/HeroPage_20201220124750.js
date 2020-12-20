@@ -4,7 +4,7 @@ import Hero from '../components/Components/Hero';
 
 const HeroPage = () => {
   useEffect(() => {
-    document.title = 'Hero component page';
+    document.title = 'Hero page';
   }, []);
 
   return (

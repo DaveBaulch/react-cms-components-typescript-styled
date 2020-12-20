@@ -4,7 +4,7 @@ import Text from '../components/Components/Text';
 
 const TextPage = () => {
   useEffect(() => {
-    document.title = 'Text component page';
+    document.title = 'Cards page';
   }, []);
 
   return (

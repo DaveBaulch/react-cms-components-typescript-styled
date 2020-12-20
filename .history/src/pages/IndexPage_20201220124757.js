@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
 const IndexPage = () => {
-  useEffect(() => {
-    document.title = 'Homepage';
-  }, []);
+    useEffect(() => {
+      document.title = 'HOmeage';
+    }, []);
 
   return (
     <div class="home">

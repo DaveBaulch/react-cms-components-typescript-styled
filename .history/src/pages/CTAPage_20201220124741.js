@@ -4,7 +4,7 @@ import CTA from '../components/Components/CTA';
 
 const CTAPage = () => {
   useEffect(() => {
-    document.title = 'CTA component page';
+    document.title = 'Cards page';
   }, []);
 
   return (

@@ -3,10 +3,6 @@ import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
 const IndexPage = () => {
-  useEffect(() => {
-    document.title = 'Homepage';
-  }, []);
-
   return (
     <div class="home">
       <div class="container">

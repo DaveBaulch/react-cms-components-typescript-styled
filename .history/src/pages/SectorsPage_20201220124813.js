@@ -4,7 +4,7 @@ import Sectors from '../components/Components/Sectors';
 
 const SectorsPage = () => {
   useEffect(() => {
-    document.title = 'Sectors component page';
+    document.title = 'Cards page';
   }, []);
 
   return (

@@ -4,7 +4,7 @@ import Quote from '../components/Components/Quote';
 
 const QuotePage = () => {
   useEffect(() => {
-    document.title = 'Quote component page';
+    document.title = 'Quote page';
   }, []);
 
   return (

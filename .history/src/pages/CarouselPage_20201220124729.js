@@ -1,16 +1,16 @@
 import React from 'react';
 import { useEffect } from 'react';
-import Hero from '../components/Components/Hero';
+import Carousel from '../components/Components/Carousel';
 
 const HeroPage = () => {
-  useEffect(() => {
-    document.title = 'Hero component page';
-  }, []);
+    useEffect(() => {
+      document.title = 'Cards page';
+    }, []);
 
   return (
     <React.Fragment>
-      <h1>Hero</h1>
-      <Hero />
+      <h1>Carousel</h1>
+      <Carousel />
     </React.Fragment>
   );
 };

@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 
 const IndexPage = () => {
   useEffect(() => {
-    document.title = 'Homepage';
+    document.title = 'Homeage';
   }, []);
 
   return (

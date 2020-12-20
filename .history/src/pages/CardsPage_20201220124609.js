@@ -4,8 +4,8 @@ import Cards from '../components/Components/Cards';
 
 const CardsPage = () => {
   useEffect(() => {
-    document.title = 'Cards component page';
-  }, []);
+    document.t
+  }, []);  
 
   return (
     <React.Fragment>

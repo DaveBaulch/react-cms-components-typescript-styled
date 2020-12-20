@@ -3,10 +3,6 @@ import { useEffect } from 'react';
 import Hero from '../components/Components/Hero';
 
 const HeroPage = () => {
-  useEffect(() => {
-    document.title = 'Hero component page';
-  }, []);
-
   return (
     <React.Fragment>
       <h1>Hero</h1>

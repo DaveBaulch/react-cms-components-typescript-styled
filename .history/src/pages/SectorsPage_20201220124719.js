@@ -3,10 +3,6 @@ import { useEffect } from 'react';
 import Sectors from '../components/Components/Sectors';
 
 const SectorsPage = () => {
-  useEffect(() => {
-    document.title = 'Sectors component page';
-  }, []);
-
   return (
     <React.Fragment>
       <h1>Sectors</h1>

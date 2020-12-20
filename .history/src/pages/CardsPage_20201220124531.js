@@ -1,12 +1,8 @@
 import React from 'react';
-import { useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Cards from '../components/Components/Cards';
 
 const CardsPage = () => {
-  useEffect(() => {
-    document.title = 'Cards component page';
-  }, []);
-
   return (
     <React.Fragment>
       <h1>Cards</h1>
