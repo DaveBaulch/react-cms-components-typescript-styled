@@ -36,7 +36,7 @@ const SidenavClose = () => {
     return () => {
       window.removeEventListener('keydown', keyHandler);
     };
-  }, [isActive, onActiveChange]);
+  }, []);
 
   return (
     <button

@@ -19,9 +19,7 @@ const SidenavClose = () => {
     if (isActive) {
       buttonRef.current.focus();
     }
-  }, [isActive]);
 
-  useEffect(() => {
     const keyHandler = (event) => {
       if (isActive && event.keyCode === 27 && window.innerWidth < 768) {
         // console.log('Close');
@@ -37,6 +35,23 @@ const SidenavClose = () => {
       window.removeEventListener('keydown', keyHandler);
     };
   }, [isActive, onActiveChange]);
+
+  // useEffect(() => {
+  //   const keyHandler = (event) => {
+  //     if (isActive && event.keyCode === 27 && window.innerWidth < 768) {
+  //       // console.log('Close');
+  //       onActiveChange();
+  //     }
+  //   };
+
+  //   function watchKeyPress() {
+  //     window.addEventListener('keydown', keyHandler);
+  //   }
+  //   watchKeyPress();
+  //   return () => {
+  //     window.removeEventListener('keydown', keyHandler);
+  //   };
+  // }, []);
 
   return (
     <button

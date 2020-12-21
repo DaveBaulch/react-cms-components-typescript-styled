@@ -23,9 +23,11 @@ const SidenavClose = () => {
 
   useEffect(() => {
     const keyHandler = (event) => {
-      if (isActive && event.keyCode === 27 && window.innerWidth < 768) {
+      if (event.keyCode === 27 && window.innerWidth < 768) {
         // console.log('Close');
-        onActiveChange();
+
+          onActiveChange();
+        }
       }
     };
 
@@ -36,7 +38,7 @@ const SidenavClose = () => {
     return () => {
       window.removeEventListener('keydown', keyHandler);
     };
-  }, [isActive, onActiveChange]);
+  }, []);
 
   return (
     <button

@@ -19,6 +19,8 @@ const SidenavClose = () => {
     if (isActive) {
       buttonRef.current.focus();
     }
+
+    
   }, [isActive]);
 
   useEffect(() => {
@@ -36,7 +38,7 @@ const SidenavClose = () => {
     return () => {
       window.removeEventListener('keydown', keyHandler);
     };
-  }, [isActive, onActiveChange]);
+  }, []);
 
   return (
     <button
