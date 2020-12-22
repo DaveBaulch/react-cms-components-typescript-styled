@@ -19,7 +19,7 @@ const SidenavClose = () => {
       if (
         isActive &&
         event.keyCode === 27 &&
-        window.innerWidth < Breakpoints.config.md
+        window.innerWidth < Breakpoints.md
       ) {
         onActiveChange();
       }

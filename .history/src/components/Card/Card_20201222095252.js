@@ -10,10 +10,10 @@ const Card = ({ card: { tagClass, tag, imgSrc, link, title, date } }) => {
       <p className={`card__badge ${tagClass}`}>{tag}</p>
       <div className="card__img-holder">
         <picture>
-          <source srcSet={imgSrc} media="(min-width: 1024px)" />
-          <source srcSet={imgSrc} media="(min-width: 768px)" />
-          <source srcSet={imgSrc} media="(min-width: 576px)" />
-          <source srcSet={imgSrc} media="(min-width: 0px)" />
+          <source srcset={imgSrc} media="(min-width: 1024px)" />
+          <source srcset={imgSrc} media="(min-width: 768px)" />
+          <source srcset={imgSrc} media="(min-width: 576px)" />
+          <source srcset={imgSrc} media="(min-width: 0px)" />
           <img src={imgSrc} alt={link} className="card__img img-responsive" />
         </picture>
       </div>

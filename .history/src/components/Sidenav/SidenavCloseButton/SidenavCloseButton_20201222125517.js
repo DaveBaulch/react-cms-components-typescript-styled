@@ -16,11 +16,7 @@ const SidenavClose = () => {
 
   useEffect(() => {
     const keyHandler = (event) => {
-      if (
-        isActive &&
-        event.keyCode === 27 &&
-        window.innerWidth < Breakpoints.config.md
-      ) {
+      if (isActive && event.keyCode === 27 && window.innerWidth < 768) {
         onActiveChange();
       }
     };

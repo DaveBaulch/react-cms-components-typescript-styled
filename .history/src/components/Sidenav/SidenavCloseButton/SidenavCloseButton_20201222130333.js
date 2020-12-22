@@ -8,6 +8,8 @@ const SidenavClose = () => {
   const { isActive, onActiveChange } = useContext(NavigationContext);
   const buttonRef = useRef();
 
+  console.log(breakpoints.md);
+
   useEffect(() => {
     if (isActive) {
       buttonRef.current.focus();
@@ -19,7 +21,7 @@ const SidenavClose = () => {
       if (
         isActive &&
         event.keyCode === 27 &&
-        window.innerWidth < Breakpoints.config.md
+        window.innerWidth < breakpoints.md
       ) {
         onActiveChange();
       }

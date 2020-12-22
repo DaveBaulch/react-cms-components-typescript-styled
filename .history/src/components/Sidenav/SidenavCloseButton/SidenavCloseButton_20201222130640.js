@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useRef, useContext } from 'react';
 import NavigationContext from '../../../contexts/NavigationContext';
 import './SidenavCloseButton.scss';
-import Breakpoints from '../../../config/Breakpoints';
+import breakpoints from '../../../config/Breakpoints';
 
 const SidenavClose = () => {
   const { isActive, onActiveChange } = useContext(NavigationContext);

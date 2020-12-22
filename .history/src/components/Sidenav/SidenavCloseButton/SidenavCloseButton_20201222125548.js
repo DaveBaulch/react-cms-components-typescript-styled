@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useRef, useContext } from 'react';
 import NavigationContext from '../../../contexts/NavigationContext';
 import './SidenavCloseButton.scss';
-import Breakpoints from '../../../config/Breakpoints';
+import breakpoints from '../../../config/breakpoints';
 
 const SidenavClose = () => {
   const { isActive, onActiveChange } = useContext(NavigationContext);
@@ -19,7 +19,7 @@ const SidenavClose = () => {
       if (
         isActive &&
         event.keyCode === 27 &&
-        window.innerWidth < Breakpoints.config.md
+        window.innerWidth < breakpoints.md
       ) {
         onActiveChange();
       }
