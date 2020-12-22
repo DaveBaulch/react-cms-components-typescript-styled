@@ -25,14 +25,25 @@ class App extends React.Component {
     this.wrapperRef = React.createRef();
   }
 
+  // state = {
+  //   navActive: false
+  // };
+
+  // onNavClick = () => {
+  //   // console.log('clicked');
+  //   this.setState({ navActive: !this.state.navActive });
+  //   // const wrapper = this.wrapperRef.current;
+  //   // wrapper.classList.toggle('nav-active');
+  // };
+
   render() {
     return (
       <NavigationStore>
         <div ref={this.wrapperRef} className="App">
           <Router history={createBrowserHistory}>
+            {/* <Header onNavClick={this.onNavClick} /> */}
             <SkipLink>Skip navigation</SkipLink>
-            <Header />
-
+            <Header /
             <Main>
               <Switch>
                 <Route path="/" exact component={IndexPage} />
@@ -46,10 +57,11 @@ class App extends React.Component {
               </Switch>
             </Main>
 
-            <Sidenav />
-
+            <Sidenav
+            // navState={this.state.navActive}
+            // onNavClick={this.onNavClick}
+            />
             <Footer />
-
             <ScrollTopButton>
               <img src="images/svg/chevron-up-white.svg" alt="Back to top" />
               <span className="sr-only">Back to top</span>

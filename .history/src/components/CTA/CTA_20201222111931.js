@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import lazyloadPicturefillBackground from 'lazyload-picturefill-background';
-import ButtonLink from '../ButtonLink';
+import BaseButtonLink from '../ButtonLink/ButtonLink';
 import './Cta.scss';
 
 const CTA = () => {
@@ -63,9 +63,9 @@ const CTA = () => {
                 __html: text
               }}
             ></div>
-            <ButtonLink href={href} variant={'cta__btn'}>
+            <BaseButtonLink href={href} variant={'cta__btn'}>
               {btnText}
-            </ButtonLink>
+            </BaseButtonLink>
           </div>
         </div>
       </div>

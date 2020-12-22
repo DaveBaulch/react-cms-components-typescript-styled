@@ -25,6 +25,7 @@ class App extends React.Component {
     this.wrapperRef = React.createRef();
   }
 
+
   render() {
     return (
       <NavigationStore>

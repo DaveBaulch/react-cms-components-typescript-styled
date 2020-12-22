@@ -25,6 +25,17 @@ class App extends React.Component {
     this.wrapperRef = React.createRef();
   }
 
+  // state = {
+  //   navActive: false
+  // };
+
+  // onNavClick = () => {
+  //   // console.log('clicked');
+  //   this.setState({ navActive: !this.state.navActive });
+  //   // const wrapper = this.wrapperRef.current;
+  //   // wrapper.classList.toggle('nav-active');
+  // };
+
   render() {
     return (
       <NavigationStore>

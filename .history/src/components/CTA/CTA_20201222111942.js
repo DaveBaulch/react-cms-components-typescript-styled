@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import lazyloadPicturefillBackground from 'lazyload-picturefill-background';
-import ButtonLink from '../ButtonLink';
+import ButtonLink from '../ButtonLink/ButtonLink';
 import './Cta.scss';
 
 const CTA = () => {
