@@ -1,6 +1,12 @@
 @import '../../sass/utilities/variables';
 @import '../../sass/utilities/mixins';
 
+// .footer .row {
+//   display: grid;
+//   grid-template-columns: repeat(12, 1fr);
+//   grid-gap: 20px;
+// }
+
 .footer-wrapper {
   background-color: $grey-lighter;
 }
