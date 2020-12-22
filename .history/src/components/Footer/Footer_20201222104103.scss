@@ -1,0 +1,145 @@
+@import '../../../sass/utilities/variables';
+@import '../../../sass/utilities/mixins';
+
+.footer .row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+}
+
+.footer-wrapper {
+  background-color: $grey-lighter;
+}
+
+.footer {
+  margin: 3rem auto 0 auto;
+  padding: 3rem 0;
+}
+
+.footer__col {
+  margin: 0;
+}
+
+.footer__col--1 {
+  grid-column: 1 / 13;
+
+  @include breakpoint(md) {
+    grid-column: 1 / 7;
+  }
+
+  @include breakpoint(lg) {
+    grid-column: 1 / 4;
+  }
+}
+
+.footer__col--2 {
+  grid-column: 1 / 13;
+
+  @include breakpoint(md) {
+    grid-column: 7 / 13;
+  }
+
+  @include breakpoint(lg) {
+    grid-column: 4 / 7;
+  }
+}
+
+.footer__col--3 {
+  grid-column: 1 / 13;
+
+  @include breakpoint(md) {
+    grid-column: 1 / 7;
+  }
+
+  @include breakpoint(lg) {
+    grid-column: 7 / 10;
+  }
+}
+
+.footer__col--4 {
+  grid-column: 1 / 13;
+
+  @include breakpoint(md) {
+    grid-column: 7 / 13;
+  }
+
+  @include breakpoint(lg) {
+    grid-column: 10 / 13;
+  }
+}
+
+.footer__sub1 {
+  margin: 0 0 3rem 0;
+}
+
+.footer__sub2 {
+  margin: 0 0 1rem 0;
+}
+
+// footer nav lists
+.footer-nav {
+  margin: 2rem auto 0 auto;
+  list-style: none;
+}
+
+.footer-nav__item {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer-nav__item-icon {
+  margin-right: 1rem;
+}
+
+.footer-nav__link {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $color-link-hover;
+    text-decoration: underline;
+  }
+}
+
+.copyright-notice-wrapper {
+  grid-column: 1 / 13;
+
+  @include breakpoint(lg) {
+    grid-column: 1 / 4;
+  }
+}
+
+.footer-links-wrapper {
+  grid-column: 1 / 13;
+
+  @include breakpoint(lg) {
+    grid-column: 4 / 13;
+  }
+}
+
+.footer-links {
+  margin: 0 auto;
+  list-style: none;
+
+  @include breakpoint(lg) {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+  }
+}
+
+.footer-links__item {
+  margin: 0 1rem 1rem 1rem;
+}
+
+.footer-links__link {
+  display: block;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $color-link-hover;
+    text-decoration: underline;
+  }
+}

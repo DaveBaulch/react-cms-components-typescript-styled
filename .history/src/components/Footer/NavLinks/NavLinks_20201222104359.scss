@@ -1,0 +1,19 @@
+.footer-nav__item {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer-nav__item-icon {
+  margin-right: 1rem;
+}
+
+.footer-nav__link {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $color-link-hover;
+    text-decoration: underline;
+  }
+}

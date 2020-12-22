@@ -1,0 +1,14 @@
+.footer-links__item {
+  margin: 0 1rem 1rem 1rem;
+}
+
+.footer-links__link {
+  display: block;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $color-link-hover;
+    text-decoration: underline;
+  }
+}

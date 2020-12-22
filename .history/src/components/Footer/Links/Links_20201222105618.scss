@@ -1,0 +1,29 @@
+@import '../../../sass/utilities/variables';
+@import '../../sass/utilities/variables';
+@import '../../sass/utilities/mixins';
+
+.footer-links {
+  margin: 0 auto;
+  list-style: none;
+
+  @include breakpoint(lg) {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+  }
+}
+
+.footer-links__item {
+  margin: 0 1rem 1rem 1rem;
+}
+
+.footer-links__link {
+  display: block;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $color-link-hover;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,24 @@
+@import '../../../sass/utilities/variables';
+@import '../../../sass/utilities/mixins';
+
+.quote {
+
+.sectors-panel .row {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+
+  @include breakpoint(sm) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include breakpoint(lg) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+
+.sectors-panel__title {
+  text-align: center;
+}
