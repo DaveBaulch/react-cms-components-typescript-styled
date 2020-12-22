@@ -9,15 +9,13 @@ import useData from '../../hooks/useData';
 import Spinner from '../Spinner';
 
 const Carousel = () => {
-  const [data, isLoading, isError] = useData('data/carousel-data.json');
+  const [data] = useData('data/carousel-data.json');
   const [paused, setPause] = useState(false);
   const carouselRef = useRef();
 
   useEffect(() => {
-    if (data) {
-      new lazyloadPicturefillBackground();
-    }
-  }, [data, isLoading, isError]);
+    new lazyloadPicturefillBackground();
+  }, [data]);
 
   const { items } = data;
 

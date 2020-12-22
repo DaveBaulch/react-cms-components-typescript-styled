@@ -4,16 +4,14 @@ import SectorsItem from '../SectorsItem';
 import './Sectors.scss';
 import lazyloadPicturefillBackground from 'lazyload-picturefill-background';
 import useData from '../../hooks/useData';
-import Spinner from '../Spinner';
 
 const Sectors = () => {
+  if (isLoading) {
   const [data, isLoading, isError] = useData('data/sectors-data.json');
 
   useEffect(() => {
-    if (data) {
-      new lazyloadPicturefillBackground();
-    }
-  }, [data, isLoading, isError]);
+    new lazyloadPicturefillBackground();
+  }, [data]);
 
   const { title, sectors } = data;
 

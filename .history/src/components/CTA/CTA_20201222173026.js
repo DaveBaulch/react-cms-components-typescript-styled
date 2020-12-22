@@ -30,7 +30,7 @@ const CTA = () => {
     if (data) {
       new lazyloadPicturefillBackground();
     }
-  }, [data, isLoading, isError]);
+  }, [data]);
 
   if (isLoading) {
     return <Spinner />;

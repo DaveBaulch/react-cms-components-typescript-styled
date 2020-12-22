@@ -27,22 +27,8 @@ const CTA = () => {
   } = data;
 
   useEffect(() => {
-    if (data) {
-      new lazyloadPicturefillBackground();
-    }
-  }, [data, isLoading, isError]);
-
-  if (isLoading) {
-    return <Spinner />;
-  }
-
-  if (isError) {
-    return (
-      <div className="loading-error">
-        <p>Oops - something went wrong ...</p>
-      </div>
-    );
-  }
+    new lazyloadPicturefillBackground();
+  }, [data]);
 
   return (
     <article className="section cta-block">

@@ -2,7 +2,6 @@ import React from 'react';
 import Card from '../Card';
 import './Cards.scss';
 import useData from '../../hooks/useData';
-import Spinner from '../Spinner';
 
 const Cards = () => {
   const [data, isLoading, isError] = useData('data/cards-data.json');

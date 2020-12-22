@@ -22,18 +22,17 @@
 
 .spinner {
   padding: 2rem;
-  border: 1px solid $white;
+  border: 1px solid white;
   border-radius: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.3);
-  color: $white;
+  color: #ffffff;
   margin-bottom: 300px;
 
   p {
-    color: $white;
-    font-size: 2rem;
+    color: white;
   }
 }

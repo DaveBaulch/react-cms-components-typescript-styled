@@ -27,10 +27,8 @@ const CTA = () => {
   } = data;
 
   useEffect(() => {
-    if (data) {
-      new lazyloadPicturefillBackground();
-    }
-  }, [data, isLoading, isError]);
+    new lazyloadPicturefillBackground();
+  }, [data]);
 
   if (isLoading) {
     return <Spinner />;

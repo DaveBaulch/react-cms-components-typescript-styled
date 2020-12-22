@@ -7,18 +7,6 @@ const Quote = () => {
   const [data, isLoading, isError] = useData('data/quote-data.json');
   const { text, author, jobTitle } = data;
 
-  if (isLoading) {
-    return <Spinner />;
-  }
-
-  if (isError) {
-    return (
-      <div className="loading-error">
-        <p>Oops - something went wrong ...</p>
-      </div>
-    );
-  }
-
   return (
     <div className="section quote-block">
       <div className="container">

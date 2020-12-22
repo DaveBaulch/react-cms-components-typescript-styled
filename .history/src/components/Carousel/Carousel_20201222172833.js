@@ -14,9 +14,8 @@ const Carousel = () => {
   const carouselRef = useRef();
 
   useEffect(() => {
-    if (data) {
-      new lazyloadPicturefillBackground();
-    }
+     if (data) {
+    new lazyloadPicturefillBackground();
   }, [data, isLoading, isError]);
 
   const { items } = data;
