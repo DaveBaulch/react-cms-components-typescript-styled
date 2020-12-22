@@ -1,0 +1,141 @@
+// -------------------------
+// 'true' is default
+//  setting this creates extra responsive classes targetting defined breakpoints
+//  eg the 'visually-hidden' mixin
+$responsive: true !default;
+
+// Custom 'brand' fonts
+//$font: 'Open Sans', sans-serif; //Available weights 400,600,700
+$font: 'Noto Sans', sans-serif; 
+// https://fonts.google.com/specimen/Noto+Sans?selection.family=Noto+Sans
+// 400,400i,700,700i
+
+$font-weight-light: 400;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// Let's set the base font size to 62.5% (10px) for easier calculations
+$base-font-size: 62.5%;
+$base-line-height: 1.5 !default;
+
+$body-font-desktop: 1.6rem; // = 16px
+$body-font-mobile: 1.6rem; // = 16px
+
+
+// Breakpoints
+// -------------------------
+
+// Named breakpoints
+$breakpoint-xs: 320px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+$xs-min: 0;
+$xs-max: ($breakpoint-sm - 1);
+
+$sm-min: $breakpoint-sm;
+$sm-max: ($breakpoint-md - 1);
+
+$md-min: $breakpoint-md;
+$md-max: ($breakpoint-lg - 1);
+
+$lg-min: $breakpoint-lg;
+$lg-max: ($breakpoint-xl - 1);
+
+$xl-min: $breakpoint-xl;
+
+// Colors
+// -------------------------
+
+// Base colors
+$white: #fff;
+$black: #000;
+
+$grey-dark: #616161;
+$grey-light: #ddd;
+$grey-lighter: #eee;
+
+$blue: #06c;
+$green: #298700;
+$red: #db1731;
+$yellow: #fd0;
+
+// Background color
+$body-bg-color: #fff !default;
+
+// Brand colors
+$brand-color-1: $grey-light;
+
+// Text colors
+$color-text: #333;
+$color-headings: #333;
+$color-error: #eee;
+
+// Link colors
+$color-link-active: #c00;
+$color-link-visited: #c00;
+$color-link-hover: #333;
+$color-link-focus: #d4d4d4;
+$color-link-disabled: #d4d4d4;
+
+// Form colors
+$color-invalid: #f0dddd;
+
+// Borders
+// -------------------------
+
+// Border colors
+$color-border: $grey-light;
+$color-border-dark: $grey-dark;
+$color-border-light: $grey-lighter;
+
+// Border styling
+$border-radius: 5px;
+$border-width: 1px;
+$border-style: solid;
+$border-color: $color-border;
+
+$border: $border-width $border-style $border-color;
+
+// Focus state styling
+$focus-outline-width: 2px;
+$focus-outline-style: solid;
+$focus-outline-color: $red;
+$focus-outline: $focus-outline-width $focus-outline-style $focus-outline-color;
+$focus-outline-offset: 0;
+
+// Default projext transitions
+$transition-speed: 0.4s;
+$transition-easing: ease;
+
+// some different speed variables
+$transition-speed-slow: 1.2s;
+$transition-speed-medium: 0.8s;
+$transition-speed-fast: 0.2s;
+
+  // complete transitions
+
+$transition-opacity: opacity 0.3s ease;
+$transition-opacity-fast: opacity 0.2s ease;
+$transition-opacity-slow: opacity 0.5s ease;
+$transition-opacity-slower: opacity 0.8s ease;
+$transition-opacity-in-out: all 0.3s ease-in-out;
+$transition-opacity-in-out-fast: all 0.1s ease-in-out;
+
+
+// z-index scale
+// --------------------------------------------------
+$z-index-1: 100;
+$z-index-2: 200;
+$z-index-3: 300;
+$z-index-4: 400;
+$z-index-5: 500;
+$z-index-6: 600;
+$z-index-7: 700;
+$z-index-8: 800;
+$z-index-9: 900;
+$z-index-10: 1000;
+
+

@@ -1,0 +1,19 @@
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation__item {
+  margin: 1rem 0 0 0;
+  padding: 0;
+}
+
+.navigation__link {
+  margin: 0;
+
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+}

@@ -1,0 +1,27 @@
+.container {
+  width: calc(100% - 30px);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  padding: 0 15px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+}
+
+
+// picturefill-background background images
+.picturefill-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 2s ease;
+
+  &.is-lazy {
+    opacity: 0;
+  }
+}

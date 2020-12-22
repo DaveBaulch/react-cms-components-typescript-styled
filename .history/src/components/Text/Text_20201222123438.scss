@@ -1,0 +1,18 @@
+@import '../../sass/utilities/variables';
+@import '../../sass/utilities/mixins';
+
+.wysiwyg {
+  text-align: left;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  grid-column: 1 / 13;
+
+  @include breakpoint(md) {
+    grid-column: 2 / 11;
+  }
+
+  @include breakpoint(lg) {
+    grid-column: 3 / 10;
+  }
+}

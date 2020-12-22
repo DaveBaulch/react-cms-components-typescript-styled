@@ -1,0 +1,9 @@
+@import '../../sass/utilities/variables';
+@import '../../sass/utilities/mixins';
+.main {
+  padding-top: 60px;
+
+  @include breakpoint(md) {
+    padding-top: 0;
+  }
+}
