@@ -10,7 +10,7 @@ const Sidenav = () => {
   const { isActive, onActiveChange } = useContext(NavigationContext);
 
   return (
-    <div className="sidenav-container" aria-hidden={!isActive}>
+    <div className="sidenav-container" aria-hidden={ }>
       <FocusTrap active={isActive}>
         <div>
           <div
@@ -19,10 +19,7 @@ const Sidenav = () => {
           ></div>
 
           <div className="sidenav-wrapper">
-            <SidenavCloseButton
-              onClick={() => onActiveChange()}
-              hidden={!isActive}
-            />
+            <SidenavCloseButton onClick={() => onActiveChange()} />
 
             <div className="sidenav" onClick={() => onActiveChange()}>
               <h2>Components</h2>

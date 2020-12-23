@@ -19,10 +19,7 @@ const Sidenav = () => {
           ></div>
 
           <div className="sidenav-wrapper">
-            <SidenavCloseButton
-              onClick={() => onActiveChange()}
-              hidden={!isActive}
-            />
+            <SidenavCloseButton onClick={() => onActiveChange()} />
 
             <div className="sidenav" onClick={() => onActiveChange()}>
               <h2>Components</h2>

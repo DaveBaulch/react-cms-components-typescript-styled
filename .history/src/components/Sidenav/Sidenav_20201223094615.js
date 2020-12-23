@@ -31,7 +31,7 @@ const Sidenav = () => {
                   <Link
                     to="/hero"
                     className="sidenav-list__link"
-                    hidden={!isActive}
+                    //hidden={!isActive}
                   >
                     Hero
                   </Link>

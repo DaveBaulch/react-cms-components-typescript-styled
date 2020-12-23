@@ -21,7 +21,7 @@ const Sidenav = () => {
           <div className="sidenav-wrapper">
             <SidenavCloseButton
               onClick={() => onActiveChange()}
-              hidden={!isActive}
+              //hidden={!isActive}
             />
 
             <div className="sidenav" onClick={() => onActiveChange()}>
@@ -31,7 +31,7 @@ const Sidenav = () => {
                   <Link
                     to="/hero"
                     className="sidenav-list__link"
-                    hidden={!isActive}
+                    //hidden={!isActive}
                   >
                     Hero
                   </Link>
