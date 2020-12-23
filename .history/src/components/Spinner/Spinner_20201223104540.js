@@ -3,12 +3,13 @@ import './Spinner.scss';
 import SpinnerIcon from '../SpinnerIcon';
 
 const Spinner = ({ message = 'Loading...' }) => (
-  <div className="spinner-background">
-    <div className="spinner">
-      <SpinnerIcon />
-      <p>{message}</p>
+    <div className="spinner-background">
+      <div className="spinner">
+        <SpinnerIcon />
+        <p>{message}</p>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Spinner;
