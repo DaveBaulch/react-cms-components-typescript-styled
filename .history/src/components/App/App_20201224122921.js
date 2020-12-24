@@ -25,7 +25,7 @@ const App = () => {
 
   return (
     <NavigationStore>
-      <div ref={wrapperRef} className="app">
+      <div ref={this.wrapperRef} className="App">
         <Router history={createBrowserHistory}>
           <SkipLink>Skip navigation</SkipLink>
           <Header />
