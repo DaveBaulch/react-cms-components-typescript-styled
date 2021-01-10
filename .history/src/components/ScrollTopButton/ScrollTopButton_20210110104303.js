@@ -27,9 +27,11 @@ const ScrollTopButton = ({ children }) => {
   }, [scrollY]);
 
   return (
-    <a href="#skip-navigation" ref={buttonRef} className="btn-scroll-top">
-      {children}
-    </a>
+    <Rea>
+      <a href="#skip-navigation" ref={buttonRef} className="btn-scroll-top">
+        {children}
+      </a>
+    </Rea>
   );
 };
 

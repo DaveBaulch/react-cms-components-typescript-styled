@@ -25,11 +25,12 @@ const ScrollTopButton = ({ children }) => {
       window.removeEventListener('scroll', logit);
     };
   }, [scrollY]);
-
   return (
-    <a href="#skip-navigation" ref={buttonRef} className="btn-scroll-top">
-      {children}
-    </a>
+    <React.Fragment>
+      <a href="#skip-navigation" ref={buttonRef} className="btn-scroll-top">
+        {children}
+      </a>
+    </React.Fragment>
   );
 };
 

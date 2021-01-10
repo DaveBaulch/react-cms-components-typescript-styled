@@ -51,7 +51,7 @@ const App = () => {
             <img
               src="images/svg/chevron-up-white.svg"
               alt=""
-              aria-hidden="true"
+              role="presentation"
             />
             <span className="sr-only">Back to top</span>
           </ScrollTopButton>

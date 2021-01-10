@@ -48,11 +48,7 @@ const App = () => {
           <Footer />
 
           <ScrollTopButton>
-            <img
-              src="images/svg/chevron-up-white.svg"
-              alt=""
-              aria-hidden="true"
-            />
+            <img src="images/svg/chevron-up-white.svg" alt="" role="" />
             <span className="sr-only">Back to top</span>
           </ScrollTopButton>
         </Router>
