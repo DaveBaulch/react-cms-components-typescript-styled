@@ -16,8 +16,8 @@ const NavLinks = ({ data }) => {
   return <ol className="footer-nav">{renderedLinks}</ol>;
 };
 
-NavLinks.propTypes = {
+FooterLinks.propTypes = {
   data: PropTypes.array.isRequired
 };
 
-export default NavLinks;
+export default FooterLinks;

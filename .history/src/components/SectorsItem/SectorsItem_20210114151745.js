@@ -30,11 +30,22 @@ const SectorsItem = ({ data: { imgSrc, title, text } }) => (
 );
 
 SectorsItem.propTypes = {
-  data: PropTypes.shape({
-    imgSrc: PropTypes.string,
-    title: PropTypes.string,
-    text: PropTypes.string
+  data: propTypes.shape({
+    imgSrc: propTypes.string,
+    title: propTypes.string,
+    text: propTypes.string
   })
 };
 
+
+Card.propTypes = {
+  card: PropTypes.shape({
+    tagClass: PropTypes.string,
+    tag: PropTypes.string,
+    imgSrc: PropTypes.string,
+    link: PropTypes.string,
+    title: PropTypes.string,
+    date: PropTypes.string
+  })
+};
 export default SectorsItem;

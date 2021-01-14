@@ -29,12 +29,4 @@ const SectorsItem = ({ data: { imgSrc, title, text } }) => (
   </article>
 );
 
-SectorsItem.propTypes = {
-  data: PropTypes.shape({
-    imgSrc: PropTypes.string,
-    title: PropTypes.string,
-    text: PropTypes.string
-  })
-};
-
 export default SectorsItem;

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Links.scss';
 
-const Links = ({ data }) => {
+const FooterLinks = ({ data }) => {
   const renderedLinks = data.map((link) => {
     return (
       <li className="footer-links__item" key={link.id}>
@@ -14,8 +14,4 @@ const Links = ({ data }) => {
   return <ul className="footer-links">{renderedLinks}</ul>;
 };
 
-Links.propTypes = {
-  data: PropTypes.array.isRequired
-};
-
-export default Links;
+export default FooterLinks;

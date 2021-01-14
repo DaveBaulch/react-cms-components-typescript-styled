@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './NavLinks.scss';
 
-const NavLinks = ({ data }) => {
+const FooterLinks = ({ data }) => {
   const renderedLinks = data.map((link) => {
     return (
       <li className="footer-nav__item" key={link.id}>
@@ -16,8 +16,8 @@ const NavLinks = ({ data }) => {
   return <ol className="footer-nav">{renderedLinks}</ol>;
 };
 
-NavLinks.propTypes = {
+FooterLinks.propTypes = {
   data: PropTypes.array.isRequired
 };
 
-export default NavLinks;
+export default FooterLinks;
