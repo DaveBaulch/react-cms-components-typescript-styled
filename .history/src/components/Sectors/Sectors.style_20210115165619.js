@@ -1,7 +1,7 @@
-@import '../../sass/utilities/variables';
-@import '../../sass/utilities/mixins';
+import styled from 'styled-components';
+import breakpoints from '../../../config/config';
 
-.sectors-panel .row {
+const SectorsRow = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
@@ -15,8 +15,13 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
   }
-}
+`;
 
-.sectors-panel__title {
+const SectorsTitle = styled.div`
   text-align: center;
-}
+`;
+
+export const Styled = {
+  SectorsRow,
+  SectorsTitle
+};
